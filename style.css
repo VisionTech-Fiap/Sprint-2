@@ -1,0 +1,553 @@
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+  scroll-behavior:smooth;
+}
+
+
+body{
+  background-color:black;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* parte de cima */
+.header{
+  width:100%;
+  padding:25px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  backdrop-filter:blur(12px);
+  background:rgba(0,0,0,0.25);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo span{
+  color:#60a5fa;
+}
+
+/* menu */
+.menu{
+  display:flex;
+  gap:30px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#d1d5db;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#60a5fa;
+}
+
+/* paginas */
+section{
+  min-height:100vh;
+  padding:120px 8%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  flex:1;
+  min-width:300px;
+}
+
+/* em parceria com jovi */
+.mini-title{
+  color:#60a5fa;
+  letter-spacing:2px;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+/* fotografe com int real */
+.hero-text h2,
+.camera-text h2,
+.contact-box h2{
+  font-size:65px;
+  line-height:1.1;
+  margin-bottom:25px;
+}
+
+.hero-text span{
+  color:#60a5fa;
+}
+
+/* mini texto */
+.description,
+.camera-text p,
+.contact-box p{
+  color:#cbd5e1;
+  line-height:1.8;
+  max-width:600px;
+}
+
+/* botoes */
+.buttons{
+  display:flex;
+  gap:20px;
+  margin-top:35px;
+  flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+  padding:15px 32px;
+  border-radius:14px;
+  text-decoration:none;
+  transition:0.3s;
+  font-weight:600;
+}
+
+/* explorar */
+.btn-primary{
+  background:linear-gradient(90deg,#3b82f6,#7c3aed);
+  color:white;
+}
+
+/* saiba mais */
+.btn-secondary{
+  border:1px solid #60a5fa;
+  color:#60a5fa;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+  transform:translateY(-4px);
+}
+
+/* foto do celular */
+.hero-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.phone-card{
+  background:rgba(0, 0, 0, 0);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:30px;
+  box-shadow:0 0 40px rgba(96,165,250,0.2);
+}
+
+.phone-card img{
+  width:320px;
+  border-radius:20px;
+  background-color: #3b82f6;
+}
+
+/* 2 pagina
+3 quadrados */
+.about,
+.numbers,
+.contact{
+  flex-direction:column;
+}
+
+.section-title{
+  margin-bottom:60px;
+}
+
+/* tudo q vc precisa */
+.section-title p{
+  color:#60a5fa;
+  margin-bottom:10px;
+  letter-spacing:2px;
+}
+
+.section-title h2{
+  font-size:50px;
+  max-width:700px;
+}
+
+.cards{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:320px;
+  padding:35px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 30px rgba(124,58,237,0.3);
+}
+
+
+.card h3{
+  margin-bottom:15px;
+  color:#60a5fa;
+}
+
+.card p{
+  color:#cbd5e1;
+  line-height:1.7;
+
+}
+/* pagina 3 */
+/* seção modo IA */
+.modoia{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:80px;
+  flex-wrap:wrap;
+}
+
+/* texto da esquerda */
+.modoia-text{
+  max-width:550px;
+}
+
+.modoia-text h2{
+  font-size:60px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.modoia-text p{
+  color:#cbd5e1;
+  line-height:1.8;
+}
+
+/* pagina 4
+4 quadrados */
+.center{
+  text-align:center;
+}
+
+.numbers-grid{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:25px;
+}
+
+.number-box{
+  width:240px;
+  padding:40px 20px;
+  text-align:center;
+  border-radius:24px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.number-box h3{
+  font-size:45px;
+  color:#60a5fa;
+  margin-bottom:12px;
+}
+
+.number-box p{
+  color:#cbd5e1;
+}
+
+/* pagina de contato */
+.center-buttons{
+  justify-content:center;
+}
+
+@media(max-width:900px){
+
+  .menu{
+    display:none;
+  }
+
+  .hero-text h2,
+  .camera-text h2,
+  .contact-box h2{
+    font-size:45px;
+  }
+
+  .section-title h2{
+    font-size:38px;
+  }
+
+  .phone-card img{
+    width:100%;
+    max-width:320px;
+  }
+
+}
+
+/* grafico */
+/* container de cada item */
+.item {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* valor à direita */
+.value {
+  float: right;
+  color: #b36cff;
+}
+
+/* barra base (fundo) */
+.bar {
+  width: 100%;
+  height: 6px;
+  background: #2a2a35;
+  border-radius: 10px;
+  margin: 6px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* preenchimento */
+.fill {
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6a5cff, #b36cff);
+  box-shadow: 0 0 10px rgba(179,108,255,0.7);
+  animation: loadBar 1.5s ease forwards;
+  position: relative;
+}
+
+/* brilho passando */
+.fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+/* animação de crescimento */
+@keyframes loadBar {
+  to {
+    width: var(--width);
+  }
+}
+
+/* animação do brilho */
+@keyframes shine {
+  0% { left: -50%; }
+  100% { left: 120%; }
+}
+
+/* CELULAR FLUTUANDO */
+.phone-card{
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-20px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+/* BRILHO NOS CARDS */
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+
+  width:200%;
+  height:200%;
+
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.08),
+    transparent
+  );
+
+  transform:rotate(25deg);
+
+  top:-120%;
+  left:-120%;
+
+  transition:0.8s;
+}
+
+.card:hover::before{
+  top:100%;
+  left:100%;
+}
+
+
+/* FUNDO ANIMADO */
+body{
+  background:
+  radial-gradient(circle at top left,#3b82f622,transparent 30%),
+  radial-gradient(circle at bottom right,#7c3aed22,transparent 30%),
+  black;
+
+  animation:bgMove 8s infinite alternate;
+}
+
+@keyframes bgMove{
+
+  from{
+    background-position:0 0, 0 0;
+  }
+
+  to{
+    background-position:100px 50px, -100px -50px;
+  }
+
+}
+
+
+/* TEXTO BRILHANDO */
+.hero-text span{
+
+  background:linear-gradient(
+    90deg,
+    #60a5fa,
+    #a855f7,
+    #60a5fa
+  );
+
+  background-size:200%;
+
+  -webkit-background-clip:text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+
+  animation:shineText 4s linear infinite;
+}
+
+@keyframes shineText{
+
+  to{
+    background-position:200%;
+  }
+
+}
+
+/* BOTÕES COM EFEITO GLOW */
+.btn-primary,
+.btn-secondary{
+  position:relative;
+  overflow:hidden;
+}
+
+.btn-primary::before,
+.btn-secondary::before{
+  content:"";
+  position:absolute;
+
+  top:0;
+  left:-100%;
+
+  width:100%;
+  height:100%;
+
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+
+  transition:0.6s;
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before{
+  left:100%;
+}
+
+
+/* MENU COM LINHA ANIMADA */
+.menu a{
+  position:relative;
+}
+
+.menu a::after{
+  content:"";
+  position:absolute;
+
+  left:0;
+  bottom:-6px;
+
+  width:0%;
+  height:2px;
+
+  background:#60a5fa;
+
+  transition:0.4s;
+}
+
+.menu a:hover::after{
+  width:100%;
+}
+
+.contact-box h2,
+.modoia-text h2,
+.section-title h2{
+
+  animation: neonPulse 3s infinite alternate;
+
+}
+
+@keyframes neonPulse{
+
+  from{
+    text-shadow:
+    0 0 10px rgba(96,165,250,0.3),
+    0 0 20px rgba(96,165,250,0.2);
+  }
+
+  to{
+    text-shadow:
+    0 0 20px rgba(96,165,250,0.8),
+    0 0 40px rgba(168,85,247,0.7);
+  }
+
+}
