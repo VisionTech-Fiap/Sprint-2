@@ -146,6 +146,11 @@ function validarLogin(event) {
     msg.textContent = 'Acesso autorizado! Bem-vindo ao painel VisionTech.';
     msg.className = 'retorno-login ok';
   } 
+  else if (usuario.value.trim() === 'giullia' && senha.value === 'jub123') {
+    msg.textContent = 'Acesso autorizado! Bem-vindo ao painel VisionTech.';
+    msg.className = 'retorno-login ok';
+  } 
+
   else {
     msg.textContent = 'Usuario ou senha incorretos.';
     msg.className = 'retorno-login erro';
