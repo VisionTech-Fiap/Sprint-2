@@ -3,225 +3,348 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sprint 2</title>
+  <title>VisionTech × Jovi</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header class="header">
+ 
+  <header class="topo">
     <h1 class="logo">Vision<span>Tech</span></h1>
-
     <nav class="menu">
       <a href="#home">Home</a>
       <a href="#sobre">Sobre</a>
       <a href="#modoia">Modo IA</a>
       <a href="#especificacoes">Especificações</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#painel">Painel</a>
+      <a href="#acesso">Acesso</a>
     </nav>
   </header>
-
+ 
   <!-- HOME -->
-  <section class="hero" id="home">
-
-    <div class="hero-text">
-      <p class="mini-title">EM PARCERIA COM JOVI - CÂMERA NATIVA</p>
-
+  <section class="inicio" id="home">
+    <div class="texto-principal">
+      <p class="mini-titulo">EM PARCERIA COM JOVI - CÂMERA NATIVA</p>
+      <p id="saudacao" class="saudacao"></p>
       <h2>
         Fotografe com <br>
         <span>inteligência real.</span>
       </h2>
-
-      <p class="description">
-        A Vision Tech traz o Modo IA diretamente na câmera do seu dispositivo Jovi - ajustes automáticos, composição inteligente e qualidade profissional em cada disparo.
+      <p class="descricao">
+        A Vision Tech traz o Modo IA diretamente na câmera do seu dispositivo Jovi — ajustes automáticos, composição inteligente e qualidade profissional em cada disparo.
       </p>
-
-      <div class="buttons">
-        <a href="#camera" class="btn-primary">Explorar</a>
-        <a href="#sobre" class="btn-secondary">Saiba Mais</a>
+      <div class="botoes">
+        <a href="#galeria" class="btn-primario">Explorar</a>
+        <a href="#sobre" class="btn-secundario">Saiba Mais</a>
       </div>
     </div>
-
-    <div class="hero-image">
-      <div class="phone-card">
-        <img src="imagens/fotocelular.png" alt="Celular">
+    <div class="area-imagem">
+      <div class="cartao-celular">
+        <img src="imagens/fotocelular.png" alt="Celular Jovi">
       </div>
     </div>
-
   </section>
-
+ 
   <!-- SOBRE -->
-  <section class="about" id="sobre">
-
-    <div class="section-title">
+  <section class="sobre" id="sobre">
+    <div class="titulo-secao">
       <p>RECURSOS</p>
       <h2>Tudo que você precisa para a foto perfeita</h2>
     </div>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon"></div>
+    <div class="lista-cards">
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">IA</div>
         <h3>Modo IA</h3>
-        <p>
-          Ajuste automático de exposição, contraste e nitidez em tempo real.
-        </p>
+        <p>Ajuste automático de exposição, contraste e nitidez em tempo real.</p>
       </div>
-
-      <div class="card">
-        <div class="icon"></div>
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">CP</div>
         <h3>Composição Inteligente</h3>
-        <p>
-          A IA identifica e sugere enquadramentos baseados nos principios fotográficos.
-        </p>
+        <p>A IA identifica e sugere enquadramentos baseados nos princípios fotográficos.</p>
       </div>
-
-      <div class="card">
-        <div class="icon"></div>
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">HD</div>
         <h3>HDR Avançado</h3>
-        <p>
-          Fusões de múltiplas exposições processadas por IA para cenas com alto contraste.
-        </p>
+        <p>Fusões de múltiplas exposições processadas por IA para cenas com alto contraste.</p>
       </div>
-
-      <div class="card">
-        <div class="icon"></div>
-        <h3>Perfis de cena</h3>
-        <p>
-          Reconhecimento automático de ambientes: retrátil, paisagem, noite, comida, esporte — sem configuração manual
-        </p>
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">CE</div>
+        <h3>Perfis de Cena</h3>
+        <p>Reconhecimento automático: retrato, paisagem, noite, comida, esporte — sem configuração manual.</p>
       </div>
-
-      <div class="card">
-        <div class="icon"></div>
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">RT</div>
         <h3>Modo Retrato IA</h3>
-        <p>
-          Desfoque de fundo com segmentação neural precisa, preservando fios de cabelo e bordas complexas.
+        <p>Desfoque de fundo com segmentação neural precisa, preservando bordas complexas.</p>
       </div>
-
-      <div class="card">
-        <div class="icon"></div>
+      <div class="cartao" onmouseover="destacarCard(this)" onmouseout="removerDestaque(this)">
+        <div class="icone">OF</div>
         <h3>Processamento Offline</h3>
-        <p>
-          Todo processamento acontece no dispositivo jovi.
-          Nenhuma foto é enviada para servidores externos.
-        </p>
+        <p>Todo processamento acontece no dispositivo Jovi. Nenhuma foto é enviada para servidores externos.</p>
       </div>
-
-      
-
     </div>
-
   </section>
-
+ 
   <!-- MODO IA -->
- <section class="modoia" id="modoia">
-
-  <div class="modoia-text">
-    <p class="mini-title">MODO IA</p>
-
-    <h2>
-      A câmera que <br>
-      pensa com você.
-    </h2>
-
-    <p>
-      O Modo IA da Vision Tech analisa cada frame antes do disparo. 
-      Ele reconhece luz, sombra, temperatura de cor e movimento - e
-       aplica correções que levariam minutos em edição, em fração de 
-       segundos.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Vision AI Engine</h3>
-
-    <div class="item">
-      <span>Exposição</span>
-      <div class="bar">
-        <div class="fill" style="--width:80%;"></div>
-      </div>
-      <span class="value">+0.4 EV</span>
+  <section class="modo-ia" id="modoia">
+    <div class="texto-ia">
+      <p class="mini-titulo">MODO IA</p>
+      <h2>A câmera que <br> pensa com você.</h2>
+      <p>
+        O Modo IA da Vision Tech analisa cada frame antes do disparo.
+        Ele reconhece luz, sombra, temperatura de cor e movimento — e
+        aplica correções que levariam minutos em edição, em fração de segundos.
+      </p>
     </div>
-
-    <div class="item">
-      <span>Temperatura de cor</span>
-      <div class="bar">
-        <div class="fill" style="--width:70%;"></div>
+    <div class="cartao">
+      <h3>Vision AI Engine</h3>
+      <div class="linha-grafico">
+        <span>Exposição</span>
+        <div class="barra"><div class="preenchimento" style="--largura:80%;"></div></div>
+        <span class="valor">+0.4 EV</span>
       </div>
-      <span class="value">5400K</span>
-    </div>
-
-    <div class="item">
-      <span>Nitidez</span>
-      <div class="bar">
-        <div class="fill" style="--width:90%;"></div>
+      <div class="linha-grafico">
+        <span>Temperatura de cor</span>
+        <div class="barra"><div class="preenchimento" style="--largura:70%;"></div></div>
+        <span class="valor">5400K</span>
       </div>
-      <span class="value">Alta</span>
+      <div class="linha-grafico">
+        <span>Nitidez</span>
+        <div class="barra"><div class="preenchimento" style="--largura:90%;"></div></div>
+        <span class="valor">Alta</span>
+      </div>
     </div>
-
-  </div>
-
-</section>
-  <!-- ESPECIFICAÇOES -->
+  </section>
+ 
+  <!-- ESPECIFICAÇÕES -->
   <section id="especificacoes">
-
-    <div class="section-title center">
+    <div class="titulo-secao centralizado">
       <p>ESPECIFICAÇÕES</p>
       <h2>Números que impressionam.</h2>
     </div>
-
-    <div class="numbers-grid">
-
-      <div class="number-box">
+    <div class="grade-numeros">
+      <div class="caixa-numero">
         <p>Latência IA</p>
-        <h3>< 12ms</h3>
-        <p>Analise em tempo real</p>
+        <h3>&lt; 12ms</h3>
+        <p>Análise em tempo real</p>
       </div>
-
-      <div class="number-box">
+      <div class="caixa-numero">
         <p>Processamento</p>
         <h3>On-device</h3>
         <p>100% local</p>
       </div>
-
-      <div class="number-box">
+      <div class="caixa-numero">
         <p>Cenas reconhecidas</p>
         <h3>200+</h3>
         <p>Por reconhecimento neural</p>
       </div>
-
-      <div class="number-box">
-        <p>Ajustes automaticos</p>
+      <div class="caixa-numero">
+        <p>Ajustes automáticos</p>
         <h3>18</h3>
-        <p>Parametros simultaneos</p>
+        <p>Parâmetros simultâneos</p>
       </div>
-
     </div>
-
   </section>
-
+ 
+  <!-- GALERIA / SLIDESHOW -->
+  <section class="secao-galeria" id="galeria">
+    <div class="titulo-secao centralizado">
+      <p>GALERIA JOVI</p>
+      <h2>Capturas da câmera inteligente</h2>
+    </div>
+ 
+    <div class="caixa-slide">
+      <div class="interior-slide">
+ 
+        <div class="slide ativo">
+          <div class="imagem-slide noturno">
+            <img class="modo-slide" alt="retrato noturno" src="./imagens/foto-modo-noturno.jpg"></img>
+          </div>
+          <div class="legenda-slide">
+            <strong>Night Vision Pro</strong>
+            <span>ISO 6400 · f/1.4 · 1/30s</span>
+          </div>
+        </div>
+ 
+        <div class="slide">
+          <div class="imagem-slide paisagem" >
+            <img class="modo-slide" src="./imagens/foto-paisagem.jpg" alt="paisagem"></img>
+          </div>
+          <div class="legenda-slide">
+            <strong>EcoLens Series</strong>
+            <span>ISO 200 · f/8.0 · 1/500s</span>
+          </div>
+        </div>
+ 
+        <div class="slide">
+          <div class="imagem-slide esporte">
+            <img class="modo-slide" src="./imagens/foto-esporte.jpg"></img>
+          </div>
+          <div class="legenda-slide">
+            <strong>SportTrack Ultra</strong>
+            <span>ISO 800 · f/4.0 · 1/2000s</span>
+          </div>
+        </div>
+ 
+        <button class="seta-slide" id="btn-anterior">&#8592;</button>
+        <button class="seta-slide direita" id="btn-proximo">&#8594;</button>
+        <span class="contador-slide" id="num-slide">1 / 4</span>
+      </div>
+ 
+      <div class="linha-pontos">
+        <span class="ponto ativo"></span>
+        <span class="ponto"></span>
+        <span class="ponto"></span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PAINEL JS -->
+  <section class="secao-painel" id="painel">
+    <div class="titulo-secao centralizado">
+      <p>PAINEL DE CONTROLE</p>
+      <h2>Gerenciamento com JavaScript</h2>
+    </div>
+ 
+    <div class="grade-painel">
+ 
+      <!-- CONTADOR DE FOTOS -->
+      <div class="cartao-painel">
+        <div class="icone-painel">CAM</div>
+        <h3>Contador de Fotos</h3>
+        <div class="display-contador">
+          <span id="total-fotos">0</span>
+          <small>fotos capturadas</small>
+        </div>
+        <div id="anim-lente" class="anim-lente"></div>
+        <div class="botoes-painel">
+          <button onclick="tirarFoto()">Capturar</button>
+          <button onclick="deletarFoto()">Deletar</button>
+          <button onclick="resetarFotos()">Reset</button>
+        </div>
+        <span id="msg-foto" class="msg-simples"></span>
+      </div>
+ 
+      <!-- MANIPULAÇÃO DE STRINGS -->
+      <div class="cartao-painel">
+        <div class="icone-painel">TXT</div>
+        <h3>Analisar Modelo</h3>
+        <input
+          type="text"
+          id="campo-texto"
+          class="campo-painel"
+          placeholder="ex: JoviProCam Ultra4K"
+          oninput="analisarTexto()"
+        />
+        <div class="tabela-texto">
+          <div class="linha-texto"><label>Maiúsculo</label>   <span id="txt-maiusculo">—</span></div>
+          <div class="linha-texto"><label>Minúsculo</label>   <span id="txt-minusculo">—</span></div>
+          <div class="linha-texto"><label>Tamanho</label>     <span id="txt-tamanho">—</span></div>
+          <div class="linha-texto"><label>Invertido</label>   <span id="txt-invertido">—</span></div>
+          <div class="linha-texto"><label>Contém "jovi"?</label><span id="txt-tem-jovi">—</span></div>
+        </div>
+      </div>
+ 
+      <!-- RELÓGIO -->
+      <div class="cartao-painel">
+        <div class="icone-painel">REL</div>
+        <h3>Relógio da Câmera</h3>
+        <div class="caixa-relogio" id="relogio">00:00:00</div>
+        <p class="legenda-relogio">Hora em tempo real — atualiza a cada segundo</p>
+      </div>
+ 
+      <!-- LISTA DINÂMICA -->
+      <div class="cartao-painel">
+        <div class="icone-painel">LOG</div>
+        <h3>Log de Cenas</h3>
+        <div class="area-adicionar">
+          <input type="text" id="campo-lista" class="campo-painel" placeholder="Descreva a cena..." />
+          <button onclick="adicionarItem()">+</button>
+        </div>
+        <ul id="lista-cenas" class="lista-cenas"></ul>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ACESSO / LOGIN -->
+  <section class="secao-acesso" id="acesso">
+    <div class="titulo-secao centralizado">
+      <p>VISION TECH</p>
+      <h2>Acesso VisionTech</h2>
+      <p class="subtitulo-secao">Faça login para acessar o painel completo da câmera Jovi</p>
+    </div>
+ 
+    <div class="grade-acesso">
+ 
+      <!-- FORMULÁRIO DE LOGIN -->
+      <div class="caixa-login">
+        <form id="form-login" onsubmit="return validarLogin(event)">
+          <div class="grupo-campo">
+            <label for="login-usuario">USUÁRIO</label>
+            <div class="envolve-campo">
+              <input
+                type="text"
+                id="login-usuario"
+                placeholder="seu.usuario@jovi.com"
+                oninput="validarCampo('usuario')"
+              />
+            </div>
+            <span class="msg-erro" id="erro-usuario"></span>
+          </div>
+ 
+          <div class="grupo-campo">
+            <label for="login-senha">SENHA</label>
+            <div class="envolve-campo">
+              <input
+                type="password"
+                id="login-senha"
+                placeholder="••••••••"
+                oninput="validarCampo('senha')"
+              />
+            </div>
+            <span class="msg-erro" id="erro-senha"></span>
+          </div>
+ 
+          <button type="submit" class="btn-entrar">Entrar no Sistema</button>
+        </form>
+ 
+        <div id="msg-login" class="retorno-login"></div>
+        <p class="dica-login">Use: <strong>admin</strong> / <strong>jovi2026</strong></p>
+      </div>
+ 
+      <!-- CENTRAL DE ALERTAS -->
+      <div class="caixa-alertas">
+        <h3>Central de Notificações</h3>
+        <p class="sub-alertas">Clique para testar alert, confirm e prompt:</p>
+        <div class="botoes-alerta">
+          <button class="btn-alerta info"    onclick="notificar('status')">Status</button>
+          <button class="btn-alerta update"  onclick="notificar('update')">Update</button>
+          <button class="btn-alerta reset"   onclick="notificar('reset')">Reset</button>
+          <button class="btn-alerta serial"  onclick="notificar('serial')">Serial</button>
+        </div>
+        <div id="resultado-notif" class="resultado-notif"></div>
+      </div>
+ 
+    </div>
+  </section>
+ 
   <!-- CONTATO -->
-  <section class="contact" id="contato">
-
-    <div class="contact-box">
-      <p class="mini-title">VISION TECH</p>
-
+  <section class="contato" id="contato">
+    <div class="caixa-contato">
+      <p class="mini-titulo">VISION TECH</p>
       <h2>Pronto para fotografar com inteligência?</h2>
-
-      <p>
-        Vision Tech está disponivel nos dispositivos Jovi como app nativo. Sem instalação adicional - já vem com seu aparelho
-      </p>
-
-      <div class="buttons center-buttons">
-        <a href="#home" class="btn-primary">Começar</a>
-        <a href="#sobre" class="btn-secondary">Ver Recursos</a>
+      <p>Vision Tech está disponível nos dispositivos Jovi como app nativo. Sem instalação adicional — já vem com seu aparelho.</p>
+      <div class="botoes centralizado">
+        <a href="https://www.jovimobile.com" target="_blank" class="btn-primario">Começar</a>
+        <a href="#sobre" class="btn-secundario">Ver Recursos</a>
       </div>
     </div>
-
   </section>
-  
-
+ 
+  <script src="script.js"></script>
 </body>
 </html>
