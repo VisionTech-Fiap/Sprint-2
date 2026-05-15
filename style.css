@@ -9,7 +9,7 @@
 body {
   background-color: black;
   color: white;
-  overflow-x: hidden; /* impede scroll horizontal — conteúdo que sair da tela pra direita fica escondido */
+  overflow-x: hidden; 
 }
 
 /* TOPO FIXO */
@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* fica na frente de tudo — quanto maior, mais na frente */
+  z-index: 1000; 
   backdrop-filter: blur(12px);
   background: rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -125,7 +125,7 @@ section {
 
 .btn-primario:hover,
 .btn-secundario:hover {
-  transform: translateY(-4px); /* sobe 4px quando passa o mouse — efeito de "levantar" */
+  transform: translateY(-4px); 
 }
 
 /* CELULAR */
@@ -187,11 +187,11 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: 0.3s;
   position: relative;
-  overflow: hidden; /* esconde o brilho que passa por cima — sem isso o ::before vazaria pra fora do card */
+  overflow: hidden; 
 }
 
 .cartao:hover {
-  transform: translateY(-10px); /* sobe o card ao passar o mouse */
+  transform: translateY(-10px); 
   box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
 }
 
@@ -267,7 +267,7 @@ section {
   background: #2a2a35;
   border-radius: 10px;
   margin: 6px 0;
-  overflow: hidden; /* corta o preenchimento nas bordas — sem isso a barra vazaria para fora */
+  overflow: hidden; 
   position: relative;
 }
 
@@ -344,9 +344,9 @@ section {
 }
 
 @keyframes flutuar {
-  0%   { transform: translateY(0); }       /* posição normal */
-  50%  { transform: translateY(-20px); }   /* sobe 20px */
-  100% { transform: translateY(0); }       /* volta ao normal */
+  0%   { transform: translateY(0); }       
+  50%  { transform: translateY(-20px); }   
+  100% { transform: translateY(0); }       
 }
 
 /* FUNDO ANIMADO */
@@ -381,7 +381,7 @@ body {
 .btn-primario,
 .btn-secundario {
   position: relative;
-  overflow: hidden; /* esconde o brilho antes de ele entrar — sem isso apareceria fora do botão */
+  overflow: hidden; 
 }
 
 .btn-primario::before,
@@ -458,18 +458,18 @@ body {
 .interior-slide {
   position: relative;
   border-radius: 16px;
-  overflow: hidden; /* esconde os slides que estão fora do quadro — essencial pro slideshow funcionar */
+  overflow: hidden; 
   border: 1px solid #1e2d3d;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-/* cada slide fica escondido por padrão */
+/* deixa o slide escondido */
 .slide { display: none; }
 
 /* o slide ativo aparece com animação */
 .slide.ativo {
   display: block;
-  animation: fadeSlide 0.4s ease; /* fade ao trocar de slide */
+  animation: fadeSlide 0.4s ease; /
 }
 
 @keyframes fadeSlide {
@@ -518,7 +518,7 @@ body {
 .seta-slide {
   position: absolute;
   top: 45%;
-  transform: translateY(-50%); /* centraliza verticalmente a seta no eixo Y */
+  transform: translateY(-50%); 
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   border: 1px solid #1e2d3d;
@@ -590,7 +590,7 @@ body {
 }
 
 .cartao-painel:hover {
-  transform: translateY(-4px); /* levanta o card levemente */
+  transform: translateY(-4px); 
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
