@@ -708,7 +708,7 @@ body {
   color: #60a5fa;
   font-family: monospace;
   max-width: 130px;
-  overflow: hidden; /* texto longo não quebra o layout — esconde o que passa do limite */
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
